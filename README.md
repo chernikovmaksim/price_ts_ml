@@ -1,7 +1,13 @@
-# price_ts_ml
-Требуется создать модель прогнозирования цены рыночного продукта. Тестовым периодом считаются последние 365 дней в данных. <br>
-Модель должна предсказывать значение цены продукта ежедневно в конце дня на день+7. <br>
-Ошибка модели вычисляется как среднее по дневным ошибкам на всем тестовом периоде (ежедневно). <br>
-#### Дневная ошибка = 100%*abs(forecast – actual)/actual,<br> 
-где forecast – прогноз модели на день+7, actual – реальная цена по инструменту на день+7.<br>
-Также необходимо сравнить точность модели с простой наивной моделью, когда значение цены на день+7 предсказывается  равным значению цены за последний день (день+0).<br> 
+# Price prediction
+## Data
+The following datasets were used:
+
+* historical data on prices 
+
+## Project description
+It is required to create a model for predicting the price of a market product. The test period is the last 365 days in the data. <br>
+The model should predict the value of the product price every day at the end of the day by day + 7. <br>
+The model error is calculated as the average of daily errors over the entire test period (daily).
+
+## Required libraries
+pandas, numpy, scikit learn, lightgbm, statsmodels, matplotlib, seaborn
